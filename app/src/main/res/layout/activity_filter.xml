@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_tip1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="原图"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/tv_src"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/pic_xxx_01" />
+
+        <TextView
+            android:id="@+id/tv_tip2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="效果图"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="22sp" />
+
+        <com.iigo.paint.FilterView
+            android:id="@+id/fv_filter"
+            app:img_id="@mipmap/pic_xxx_01"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_draw_normal"
+                android:textAllCaps="false"
+                android:text="原图"
+                android:onClick="onDrawNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_draw_negative"
+                android:textAllCaps="false"
+                android:text="底片"
+                android:onClick="onDrawNegative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_draw_retro"
+                android:textAllCaps="false"
+                android:text="复古"
+                android:onClick="onDrawRetro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_draw_fair"
+                android:textAllCaps="false"
+                android:text="美颜"
+                android:onClick="onDrawFair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_draw_bandw"
+                android:textAllCaps="false"
+                android:text="黑白"
+                android:onClick="onDrawBAndW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_draw_change"
+                android:textAllCaps="false"
+                android:text="发色"
+                android:onClick="onDrawChange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
